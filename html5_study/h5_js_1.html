@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript</title>
+
+    <script>
+      /*
+      //前端语法会尽量隐藏报错
+      const i = 10;  //常量定义
+      var a = 10;
+      var b = 20;
+      var c = a + b;
+      var d = "helllo world";
+      var e = "1234"
+      console.log(a);
+      console.log(c); //在浏览器中开发者工具console中打印输出
+      console.log(d);
+      document.write(a);//在浏览器页面输出
+      document.write(d);
+      document.write(a+d);  //可以直接加减任何类型
+      document.write(Number(e)+a); //使用Number String等进行类型转换
+      alert("helllo world") //页面弹窗
+      //js中类型
+      var b;
+      b = 10; // 'number'
+      console.log(typeof b);
+      b = true; // 'boolean'
+      console.log(typeof b);
+      a = 'Henrry Lee'; // 'string'
+      console.log(typeof a);
+      a = function(){}; // 'function'
+      console.log(typeof a);
+      a = {age:26}; // 'object'
+      console.log(typeof a);
+
+
+      var score = 6;
+      switch(true) {
+          case score >= 80 && score <= 100: {
+              console.log("优秀");
+          } break;
+
+          case score >= 60 && score < 80: {
+              console.log("良好");
+          } break;
+
+          default:{
+              console.log("不及格！");
+          }
+      }
+      */
+      var aa = [1,2,3,4,56,23,1];
+      for(var i in aa){
+          document.write("下标：" + i + "  ||值：" + aa[i] + '<br>');
+      }
+      for (var i of aa){
+          document.write(i+'  ');
+      }
+
+      function plus(num) {
+          if(num === 1){
+              return num;
+          }
+          return num + plus(num - 1);
+      }
+      var sum = plus(100);
+      document.write('<br>' + sum);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<!-- 作业
+所有的css使用外部定义方式
+1.给这个页面加上title  内容为 : p1802_作业    5分
+2.假设第一篇文章的 Docker的应用场景 为本文章的标题 请给他加上语义化的标签  5分
+3.给第一篇文章下面的所有section里面的内容 字体颜色变为 红色 加粗 5分
+4.给第一篇文章的最后一个section 加上虚线形状的边框   5分
+5.给第一篇文章没有标签部分的文字给个你认为最能表示他语义化的标签   5分
+6.给第二篇文章里面的所有p标签给出绿色 (使用id选择器)   5分
+7.给第二篇文章的article标签所有的子div标签下面的子p标签 改变字体样式和颜色(黄色) （使用class选择器）  5分
+8.第三篇文章中有代码 请加上适合的标签  5分
+9.给输出第三篇第二行文字在页面中换行 并加上样式,鼠标移动过去改变颜色 5分
+10.第三篇文章文字  '以上命令完整的意思可以解释为：'  后面的文字分为了两行 在不删除div标签的情况下使他们成为一行 10分
+11.在后面自行写一含有个账户 密码 确认密码 提交按钮 重置按钮 的表单 提交地址随意  提交方法 POST方法 请给表单加上红色边框 15
+12. 写一个类似于 442A.png的分页代码 20分
+13. 写一个类似于 442B.png的样式出来 10分
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <title>p1904汪琪_作业</title>
+  <style>
+    article>section{
+      color: red;
+      font-weight: bold;
+    }
+    article>section:last-of-type{
+      border: dashed;
+      width: 30%;
+    }
+    #section3>article>div>div>p,#section3>article>div>p{
+      color: green;
+    }
+    #section3>article>div>.p2{
+      color: yellow;
+      font-style: initial;
+    }
+    section>article>#l4:hover{
+      color: #871976;
+    }
+    section>article>div>div{
+      float: left;
+    }
+    .l1>form>div{
+      text-indent: 3em;
+    }
+    .l1{
+      border: 2px solid red;
+      width: 300px;
+      text-align: center;
+      margin: auto;
+    }
+    .l2>a{
+      border: 2px solid green;
+      color: red;
+    }
+    #l3>.l3{
+      float: left;
+      border: rgba(181, 216, 255, 0) solid 1px;
+      background-color: red;
+      height: 60px;
+      width: 25px;
+    }
+    #l3>.l31{
+      background-color: yellow;
+      border: rgba(181, 216, 255, 0) solid 1px;
+      height: 60px;
+      width: 80px;
+    }
+    .l4{
+      border: 1px solid rgba(29, 135, 182, 0.63);
+      width: 550px;
+      margin: auto;
+    }
+    .l4>#l41{
+      margin-left: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .l4>#l42{
+      margin-left: 20px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .l4>.l43>fieldset{
+      border: 1px solid #31e8ff;
+      margin-left: 10px;
+      margin-right: 20px;
+    }
+    .l4>.l43>fieldset>legend{
+      border: 1px solid #31e8ff;
+      width: 100px;
+      color: #1c8191;
+    }
+    .l4>.l43>fieldset>.di1{
+      margin-left: 60px;
+      margin-bottom: 5px;
+    }
+    .l4>.l43>fieldset>.di1>label{
+      display: inline-block;
+      width: 100px;
+      text-align: right;
+      margin-right: 10px;
+    }
+    .l4>.l43>fieldset>.di1>#pwd{
+      width: 100px;
+    }
+    .l4>.l43>fieldset>.di1>input{
+      border-top: 2px solid grey;
+      border-left: 2px solid grey;
+      margin-left: 0;
+    }
+    .l4>.l43>fieldset>.di1>button{
+      margin: 0;
+      background-color: rgba(28, 129, 145, 0.15);
+      border: 1px solid #1c8191;
+    }
+
+
+    .l4>.l44>fieldset{
+      border: 1px solid #31e8ff;
+      margin-left: 10px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+    .l4>.l44>fieldset>legend{
+      border: 1px solid #31e8ff;
+      width: 100px;
+      color: #1c8191;
+    }
+    .l4>.l44>fieldset>.di2{
+      margin-left: 60px;
+      margin-bottom: 5px;
+    }
+    .l4>.l44>fieldset>.di2>label{
+      display: inline-block;
+      width: 100px;
+      text-align: right;
+      margin-right: 10px;
+    }
+    .l4>.l44>fieldset>.di2>#email{
+      width: 100px;
+    }
+    .l4>.l44>fieldset>.di1>input{
+      border-top: 2px solid grey;
+      border-left: 2px solid grey;
+      margin-left: 0;
+    }
+    .l4>.l44>fieldset>.di2>p{
+      display: inline;
+      font-size: 0.5em;
+    }
+    .l4>.l44>fieldset>.di3>button{
+      margin: 0;
+      background-color: rgba(28, 129, 145, 0.15);
+      border: 1px solid #1c8191;
+    }
+
+    .l4>.l44>fieldset>.di2>a,.l4>.l43>fieldset>a{
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+<section>
+  <article>
+    <h1>Docker的应用场景</h1>
+    <section>
+      Web 应用的自动化打包和发布。
+    </section>
+    <section>
+      自动化测试和持续集成、发布。
+    </section>
+    <section>
+      在服务型环境中部署和调整数据库或其他的后台应用。
+    </section>
+    <p>
+    从头编译或者扩展现有的OpenShift或Cloud Foundry平台来搭建自己的PaaS环境。
+    </p>
+  </article>
+</section>
+
+
+
+
+<section id="section3">
+  <article>
+    <header><strong>Docker 的优点</strong></header>
+    <div>
+      <div>
+        <p>
+          1、简化程序：
+        </p>
+      </div>
+      <p>
+        Docker 让开发者可以打包他们的应用以及依赖包到一个可移植的容器中，然后发布到任何流行的 Linux
+        机器上，便可以实现虚拟化。Docker改变了虚拟化的方式，使开发者可以直接将自己的成果放入Docker中进行管理。方便快捷已经是 Docker的最大优势，过去需要用数天乃至数周的
+        任务，在Docker容器的处理下，只需要数秒就能完成。
+      </p>
+    </div>
+    <div>
+      <p class="p2">
+        2、避免选择恐惧症：
+      </p>
+    </div>
+  </article>
+</section>
+
+
+
+
+<section>
+  <article>
+    Docker 允许你在容器内运行应用程序， 使用 docker run 命令来在容器内运行一个应用程序。
+    <p id = "l4">输出Hello world</p>
+    <pre>runoob@runoob:~$ docker run ubuntu:15.10 /bin/echo "Hello world"</pre>
+    <br>
+    <div>
+      以上命令完整的意思可以解释为：<br>
+      <div>Docker 以 ubuntu15.10 镜像创建一</div>
+      <div>个新容器，然后在容器里执行 bin/echo "Hello world"，然后输出结果</div>
+    </div>
+  </article>
+</section>
+</body>
+<br>
+<br>
+<br>
+
+
+<section class="l1">
+  <form action="h5_css_homework.html" method="post">
+    <div>
+    <label for="i1">账号：</label><input id = "i1" type="text" name="test" placeholder=请输入账号 required>
+      <input type="button" value=(必填)><br>
+    </div>
+    <div>
+    <label for="i2">密码：</label><input id = "i2" type="password" name="pwd" placeholder=请输入密码 required>
+      <input type="button" value=(必填)><br>
+    </div>
+    <label for="i3">请确认密码：</label><input id = "i3" type="password" name="pwd" placeholder=请输入密码 required>
+      <input type="button" value=(必填)><br>
+  </form>
+    <form action="h5_css_homework.html" method="post">
+    <input type="submit" value="提交">
+    <input type="reset" value="重置">
+  </form>
+</section>
+
+
+<hr>
+<br>
+
+
+<section class="l2">
+  &lt
+  <a href=https://gitee.com/moist-master/rimi_web_font/blob/master/css/css_basic/home_work.md><ins>1</ins></a>
+  <a href=https://gitee.com/moist-master/rimi_web_font/blob/master/css/css_basic/home_work.md><ins>2</ins></a>
+  <a href="https://gitee.com/moist-master/rimi_web_font/blob/master/html/html_basic/html_element.md"><ins>3</ins></a>
+  <a href="https://gitee.com/moist-master/rimi_web_font/blob/master/html/html_basic/html_element.md"><ins>4</ins></a>
+  <a href="https://gitee.com/moist-master/rimi_web_font/blob/master/html/html_basic/html_element.md"><ins>5</ins></a>
+  <a href="https://gitee.com/moist-master/rimi_web_font/blob/master/html/html_basic/html_element.md"><ins>...</ins></a>
+  <a href="https://gitee.com/moist-master/rimi_web_font/blob/master/html/html_basic/html_element.md"><ins>8</ins></a>
+  <a href="https://gitee.com/moist-master/rimi_web_font/blob/master/html/html_basic/html_element.md"><ins>9</ins></a>
+  <a href="https://gitee.com/moist-master/rimi_web_font/blob/master/html/html_basic/html_element.md"><ins>10</ins></a>
+  &gt
+</section>
+<br>
+<hr>
+<br>
+<br>
+<div id = "l3">
+  <section class="l3"></section>
+  <section class="l31"></section>
+  <br>
+</div>
+
+<hr>
+<br>
+
+<section class="l4">
+  <div id = "l41">已注册用户请登录</div>
+  <form class="l43">
+    <fieldset>
+      <legend>
+        <div style="text-align: center">用户登录</div>
+      </legend>
+      <div class="di1">
+        <label>用户名:</label><input style="margin-left: 4px;">
+      </div>
+      <div class="di1">
+        <label>密码:</label><input id="pwd" style="margin: 4px;">
+      </div>
+      <div class="di1">
+        <label><input type="checkbox"><a href="#" style="color: #1c8191">记住我</a></label>
+        <button>登录</button>
+      </div>
+      <a href="#" id = "xx2" style="color: #1c8191">你忘记密码?</a>
+    </fieldset>
+  </form>
+
+  <div id="l42">注册创建账户</div>
+    <form class="l44">
+      <fieldset>
+        <legend>
+          用户注册
+        </legend>
+        <div style="color: #1c8191">请确定正确的电子邮箱在你注册之前请先阅读服务条款</div>
+        <div class="di2">
+          <label for="t3">用户名：</label><input type="text" name="name" id = "t3" required>
+          <p>*(请输入6～16个字节)</p>
+        </div>
+        <div class="di2">
+          <label for="t4" id="email">电子邮箱：</label><input style="width: 250px" type="text" name="email" id="t4" required>
+          <p>*</p>
+        </div>
+        <div class="di2">
+          <label for="t5">密码：</label><input type="password" name="password" id = "t5" required>
+          <p>*(最多16个字节)"</p>
+        </div>
+        <div class="di2">
+          <label for="t6">重制密码：</label><input type="password" name="unpassword" id = "t6" required>
+        </div>
+        <div class="di2">
+          <label for="t7">同意服务条款</label><input type="checkbox" name="yes" id="t7">
+        <a href="#" style="color: #1c8191">先看看条款</a><br>
+        </div>
+        <div class="di3">
+          <button>提交</button>
+          <button>重置</button>
+        </div>
+      </fieldset>
+    </form>
+</section>
+
+</body>
+</html>

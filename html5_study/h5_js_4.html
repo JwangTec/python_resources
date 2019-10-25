@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js练习</title>
+</head>
+<style>
+  td{
+    border: 1px solid black;
+  }
+  *{
+    margin: 0;
+  }
+</style>
+<body>
+
+<table cellspacing="0px" id = 't1'>
+  <tr>
+    <td colspan="4">
+      <button onclick="add()">添加</button><button onclick="del()">删除</button>
+    </td>
+  </tr>
+  <tr>
+    <td>全选 <input type="checkbox" name="check"></td>
+    <td>书号</td>
+    <td>书名</td>
+    <td>作者</td>
+  </tr>
+</table>
+
+</body>
+<script>
+  function add() {   //添加按钮：添加表格标签并加入内容
+      var table = document.getElementById('t1');  //获取table下标签
+      var tr1 = document.createElement('tr');  //创建tr标签
+      tr1.innerHTML = "<td><input type = \"checkbox\" name=\"check\"></td><td>1</td><td>2</td><td>3</td>"; //在tr标签中输入html语法
+      table.appendChild(tr1); //tr中添加该语法
+  }
+  function del() {
+      var inputs = document.getElementsByTagName('input');
+      var del_inputs = [];
+      for(let i of inputs){
+          console.log(i.checked);   //是否选中：根据checked的值确定
+          if(i.checked) {
+              del_inputs.push(i)     //删除该按钮的值
+          }
+      }
+      //return del_inputs
+      for(let i of del_inputs){
+          let tr2 = i.parentNode.parentNode;
+          let table2 = tr2.parentNode;
+         table2.removeChild(tr2);
+      }
+  }
+</script>
+</html>

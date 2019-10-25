@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>p1904汪琪</title>
+  <style>
+    .l1>ul{
+      margin: 0;
+      padding: 0;
+      width: 150px;
+      list-style-type: none;
+    }
+    .l1>ul>li{
+      background-color: rgba(239, 239, 239, 0.77);
+      margin-bottom: 2px;
+      height: 40px;
+      border-radius: 5px;
+
+      text-align: center;
+      line-height: 40px;
+      border-radius: 5px;
+      font-size: 1.5em;
+    }
+    .l2>ul{
+      margin: 0;
+      padding: 0;
+      width: 750px;
+      list-style-type: none;
+    }
+    .l2>ul>li{
+      float: left;
+      background-color: rgba(239, 239, 239, 0.77);
+      margin-left: 2px;
+      height: 40px;
+      border-radius: 5px;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 5px;
+      font-size: 1.5em;
+      width: 6em;
+    }
+    .l2>ul>li:hover{
+      background-color: #871976;
+    }
+    .l2>ul>.l21{
+      letter-spacing: 1em;
+    }
+
+    .l3>ul{
+      margin: auto;
+      padding: 0;
+      width: 400px;
+      list-style-type: none;
+    }
+    .l3>ul>li>ul{
+      margin: auto;
+      padding: 0;
+      width: 400px;
+      list-style-type: none;
+    }
+    .l3>ul>li>ul>li>ul{
+      margin: auto;
+      padding: 0;
+      width: 400px;
+      list-style-type: none;
+    }
+
+    .l3>#ul1>#li1{
+      position: relative;
+    }
+
+    .l3>#ul1>#li1 .l3>ul{
+      margin: 0;
+      padding: 0;
+      position: absolute;
+
+    }
+
+
+  </style>
+</head>
+<body>
+
+<p>
+  <hr>
+</p>
+<section class="l1">
+<ul>
+  <li>首页</li>
+  <li>新闻快讯</li>
+  <li>产品展示</li>
+  <li>售后服务</li>
+  <li>联系我们</li>
+</ul>
+</section>
+<p>
+<hr>
+</p>
+
+<section class="l2">
+  <ul>
+    <li class="l21">首页</li>
+    <li>新闻快讯</li>
+    <li>产品展示</li>
+    <li>售后服务</li>
+    <li>联系我们</li>
+  </ul>
+</section>
+
+<br>
+<br>
+<hr>
+
+<section class="l3">
+  <ul id="ul1">
+    <li id="li1">
+      章节
+      <ul id = "ul11">
+        <li id="li11">python
+        <ul id="ul111">
+          <li>
+            GUI
+          </li>
+          <li>
+            SOCKET
+          </li>
+          <li>
+            ASYNC
+          </li>
+        </ul>
+        </li>
+        <li>go</li>
+      </ul>
+    </li>
+    <li>问答</li>
+    <li>笔记</li>
+    <li>提问</li>
+  </ul>
+</section>
+</body>
+</html>

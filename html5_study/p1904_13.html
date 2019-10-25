@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul>li{
+            display: inline-block;
+            margin: 10px;
+            position: relative;
+            top: -11px;
+        }
+        ul{
+            background-color: #303642;
+            color: #d3d6d9;
+            font-size:10px;
+            font-family: "Segoe UI";
+            font-weight: lighter;
+            height: 30px;
+            line-height: 30px;
+            border-radius: 1px;
+        }
+        div:hover ul{
+            display: block;
+        }
+        ul:hover{
+            display: block;
+        }
+        li:hover{
+            color: #E7EAED;;
+        }
+        #ul1{
+            position: relative;
+        }
+        #li1{
+            position: absolute;
+            left: 128px;
+            top: -8px;
+            background-color: #C71C25;
+            font-size:5px;
+            height: 10px;
+            line-height: 10px;
+            width: 18px;
+            text-align: center;
+            border-radius: 1px;
+            color: #F5D8D9;
+        }
+        #li2>ul>li{
+            display: block;
+            position: relative;
+            left: -40px;
+            top:1px;
+            width: 16em;
+            text-indent: 1em;
+            margin: 0px;
+        }
+        #li2>{
+            position: relative;
+        }
+
+        #li2:hover ul{
+            display: block;
+        }
+        #li2>ul{
+            width: 12em;
+            background-color: #303642;
+            height: 120px;
+            position: absolute;
+            /*display: none;*/
+            top: 30px;
+
+        }
+        #li2>ul>li:hover{
+            background-color: #494962;
+        }
+    </style>
+</head>
+<body>
+
+
+    <ul id="ul1">
+    <!--    <li><img src="https://gitee.com/logo-black.svg?20171024" height="28" width="60"></li>-->
+        <li id="li1">
+            特惠
+        </li>
+        <li>开源软件</li>
+        <li>企业版</li>
+        <li>高校版</li>
+        <li>博客</li>
+
+        <li id="li2">
+            我的码云
+            <ul>
+                <li>
+                    p1901
+                </li>
+
+                <li>
+                    p1902
+                </li>
+
+                <li>
+                    p1903
+                </li>
+                <li>
+                    p1904
+                </li>
+            </ul>
+
+        </li>
+  </ul>
+
+
+
+</body>
+</html>
